@@ -1,0 +1,42 @@
+.TH STARTRSP 1 2015-11-03 "RSp 0.10.0" "RSp session management"
+.SH NAME
+startrspkwin \- scripts to initialize and launch RSp Wayland sessions
+.SH SYNOPSIS
+.B startrsp
+.SH DESCRIPTION
+\fBstartrspkwin\fR is a shell scripts meant to initialize and launch a RSp Wayland session using kwin_wayland as compositor.
+It is as such similar to counterparts of other desktop environments like startrsp in
+RSp or startkde in KDE.
+.P
+It's main tasks are exporting environment variables, partly after performing
+corresponding checks, launching \fBa compositor\fR, which will launch the RSp session manager.
+It launches also a basic settingsimporter for keyboard layout and screen settings.
+.SH FILES
+.I $XDG_DATA_DIRS/wayland-session/rsp-kwin.desktop
+.RS 5
+Desktop entry file stating startrspkwin as binary needed to start RSp Wayland sessions. Sourced e. g.
+by display managers.
+.RE
+.SH BUGS
+Bugs can be reported on https://github.com/rsp/stefonarch/rsp-kwin-session/>issues.
+.SH EXAMPLE
+To start an RSp Wayland session from a virtual terminal (virtual console) add a line
+.P
+.RS 5
+exec startrspkwin
+.RE
+.P
+Display managers are making use of scripts like \fBstartrspkwin\fR automatically. Information about
+available wayland desktop environments is provided by files \fI$XDG_DATA_DIRS/wayland-sessions/*.desktop\fR,
+.br
+File \fIrsp.desktop\fR provided by RSp is stating \fBstartrsp\fR in key \fIExec\fR while making sure the session
+manager \fBrsp-session\fR does exist by stating it in key \fITryExec\fR.
+.SH SEE ALSO
+.BR rsp-session (1)
+.BR startx (1)
+.BR sddm (1)
+.P
+.B https://www.freedesktop.org/wiki/Specifications/desktop-entry-spec/
+.RS 5
+Desktop Entry Specification defining desktop entry files (*.desktop).
+.RE

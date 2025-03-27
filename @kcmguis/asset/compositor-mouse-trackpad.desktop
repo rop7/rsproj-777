@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Mouse and Touchpad 
+Comment=Mouse & Touchpad (kwin)
+Exec=kcmshell6 --caption "Mouse & Touchpad (kwin)" kcm_touchpad kcm_mouse kcm_cursortheme
+Type=Application
+Icon=input-touchpad
+Categories=Settings;DesktopSettings;Qt;RSp;
+OnlyShowIn=RSp;

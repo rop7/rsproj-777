@@ -1,0 +1,21 @@
+2024-12-17 15:40:46.288 [info] Started local extension host with pid 97590.
+2024-12-17 15:40:47.035 [info] Settings Sync: Updating due to initialize
+2024-12-17 15:40:47.036 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-17 15:40:47.036 [info] Settings Sync: Authentication providers updated []
+2024-12-17 15:40:47.489 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-17 15:40:47.490 [info] Settings Sync: Authentication providers updated ["github"]
+2024-12-17 15:40:47.490 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-17 15:40:47.490 [info] Settings Sync: Authentication providers updated ["github"]
+2024-12-17 15:40:47.490 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-17 15:40:47.491 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
+2024-12-17 15:40:47.491 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-17 15:40:47.491 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
+2024-12-17 15:40:47.509 [info] Settings Sync: Updating due to declared authentication providers changed
+2024-12-17 15:40:47.510 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-17 15:40:47.511 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
+2024-12-17 15:40:47.511 [info] Settings Sync: Updating due to declared authentication providers changed
+2024-12-17 15:40:47.511 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-17 15:40:47.512 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
+2024-12-17 15:40:48.784 [error] [network] #1: https://az764295.vo.msecnd.net/extensions/chat.json - error GET Offline
+2024-12-17 15:40:48.785 [warning] Failed to fetch chat participant registry Offline
+2024-12-17 15:40:49.365 [info] [perf] Render performance baseline is 50ms

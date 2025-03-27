@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="16"
+   viewBox="0 0 16 16"
+   width="16"
+   version="1.1"
+   id="svg42"
+   sodipodi:docname="font-x-generic.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview44"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="true"
+     inkscape:zoom="64.1875"
+     inkscape:cx="6.6212269"
+     inkscape:cy="7.9922103"
+     inkscape:window-width="2400"
+     inkscape:window-height="1281"
+     inkscape:window-x="1920"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg42">
+    <inkscape:grid
+       type="xygrid"
+       id="grid225" />
+  </sodipodi:namedview>
+  <title
+     id="title2">Template icons dark</title>
+  <defs
+     id="defs38" />
+  <path
+     style="line-height:1000%;fill:#72b0f7;fill-opacity:1"
+     d="m 8.9737564,7.9787626 q -2.3728812,0 -3.2875886,0.5421906 -0.9147074,0.5421906 -0.9147074,1.8511028 0,1.042281 0.6812465,1.659741 0.6914525,0.605978 1.8727901,0.605978 1.6278476,0 2.6063421,-1.148169 Q 10.92054,10.32868 10.92054,8.4150666 V 7.9787626 Z M 12.877529,7.1699418 V 13.968374 H 10.92054 v -1.809003 q -0.669765,1.084381 -1.6699474,1.607436 -1.0001822,0.510297 -2.4468743,0.510297 -1.8294148,0 -2.9150718,-1.020594 -1.0741752,-1.033352 -1.0741752,-2.755604 0,-2.0118463 1.3395297,-3.0324404 Q 5.5062881,6.4465958 8.1764173,6.4465958 H 10.92054 V 6.2552344 q 0,-1.3522871 -0.89302,-2.0858391 -0.8828141,-0.7437579 -2.4902497,-0.7437579 -1.0205941,0 -1.9888827,0.2436668 Q 4.580099,3.9142468 3.6858035,4.4041319 V 2.595129 Q 4.7612545,2.1805126 5.7716426,1.9776696 6.7820307,1.7658963 7.7401134,1.7658963 q 2.5846546,0 3.8616726,1.3395297 1.275743,1.3408054 1.275743,4.0645158 z"
+     font-size="53.333px"
+     font-family="sans-serif"
+     letter-spacing="0"
+     word-spacing="0"
+     fill="url(#j)"
+     stroke="#4580da"
+     stroke-width="0.192"
+     id="path40" />
+  <metadata
+     id="metadata169">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Template icons dark</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

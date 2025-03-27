@@ -1,0 +1,147 @@
+[Icon Theme]
+Name=Plane
+Comment=the plane icon theme
+Example=folder
+Inherits=Adwaita,hicolor
+
+# KDE Specific Stuff
+DisplayDepth=32
+LinkOverlay=link_overlay
+LockOverlay=lock_overlay
+ZipOverlay=zip_overlay
+DesktopDefault=48
+DesktopSizes=16,22,32,48,64,72,96,128
+ToolbarDefault=22
+ToolbarSizes=16,22,32,48
+MainToolbarDefault=22
+MainToolbarSizes=16,22,32,48
+SmallDefault=16
+SmallSizes=16
+PanelDefault=32
+PanelSizes=16,22,32,48,64,72,96,128
+
+# Directory list, important sort:
+# 1: xl
+# 2: sm
+# 3: symbolic
+# 4: *symbolic@2x
+Directories=places/xl,places/sm,places/symbolic,places/symbolic@2x,apps/xl,apps/sm,apps/symbolic,mimetypes/xl,mimetypes/sm,mimetypes/symbolic,devices/xl,devices/sm,devices/symbolic,status/xl,status/sm,status/symbolic
+
+# --- apps ---
+[apps/xl]
+Context=Apps
+Size=48
+MinSize=8
+MaxSize=512
+Type=Scalable
+
+[apps/sm]
+Context=Apps
+Size=16
+MinSize=8
+MaxSize=32
+Type=Scalable
+
+[apps/symbolic]
+Context=Apps
+Size=16
+MinSize=8
+MaxSize=512
+Type=Scalable
+
+# --- mimetypes ---
+[mimetypes/xl]
+Context=MimeTypes
+Size=48
+MinSize=8
+MaxSize=512
+Type=Scalable
+
+[mimetypes/sm]
+Context=MimeTypes
+Size=16
+MinSize=8
+MaxSize=32
+Type=Scalable
+
+[mimetypes/symbolic]
+Context=MimeTypes
+Size=16
+MinSize=8
+MaxSize=512
+Type=Scalable
+
+# --- devices ---
+[devices/xl]
+Context=Devices
+Size=48
+MinSize=8
+MaxSize=512
+Type=Scalable
+
+[devices/sm]
+Context=Devices
+Size=16
+MinSize=8
+MaxSize=32
+Type=Scalable
+
+[devices/symbolic]
+Context=Devices
+Size=16
+MinSize=8
+MaxSize=512
+Type=Scalable
+
+# --- status ---
+[status/xl]
+Context=Status
+Size=48
+MinSize=8
+MaxSize=512
+Type=Scalable
+
+[status/sm]
+Context=Status
+Size=16
+MinSize=8
+MaxSize=32
+Type=Scalable
+
+[status/symbolic]
+Context=Status
+Size=16
+MinSize=8
+MaxSize=512
+Type=Scalable
+
+
+# --- places ---
+[places/xl]
+Context=Places
+Size=48
+MinSize=8
+MaxSize=512
+Type=Scalable
+
+[places/sm]
+Context=Places
+Size=16
+MinSize=8
+MaxSize=32
+Type=Scalable
+
+[places/symbolic]
+Context=Places
+Size=16
+MinSize=8
+MaxSize=512
+Type=Scalable
+
+[places/symbolic@2x]
+Size=64
+Scale=2
+Context=Places
+MinSize=32
+MaxSize=512
+Type=Scalable

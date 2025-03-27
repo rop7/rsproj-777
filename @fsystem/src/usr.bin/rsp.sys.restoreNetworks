@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Caminho para o arquivo de backup
+BACKUP_FILE="$1"
+
+# Verifica se o arquivo de backup foi fornecido
+if [[ -z "$BACKUP_FILE" ]]; then
+    echo "Uso: $0 <caminho para o arquivo de backup>"
+    exit 1
+fi
+
+# Verifica se o arquivo de backup existe
+if [[ ! -f "$BACKUP_FILE" ]]; then
+    echo "Arquivo de backup não encontrado: $BACKUP_FILE"
+    exit 2
+fi
+
+# Diretório onde o NetworkManager armazena as conexões
+NM_CONNECTIONS_DIR="/etc/NetworkManager/system-connections"
+
+# Restaura as redes a partir do backup
+echo "Iniciando a restauração das redes..."
+
+# Extrai o backup no diretório de conexões
+sudo tar -xzf "$BACKUP_FILE" -C "$NM_CONNECTIONS_DIR"
+
+# Altera as permissões dos arquivos extraídos
+echo "Ajustando permissões dos arquivos extraídos..."
+sudo chmod 600 $NM_CONNECTIONS_DIR/*
+
+echo "Restauração concluída. As redes foram restauradas."

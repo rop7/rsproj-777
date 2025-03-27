@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=pkill qps; pkill spotrun; pkill -9 rsp-config
+Name=scape-close
+NoDisplay=true
+StartupNotify=false
+Type=Application
+X-KDE-GlobalAccel-CommandShortcut=true

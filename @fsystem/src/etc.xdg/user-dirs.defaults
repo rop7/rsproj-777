@@ -1,0 +1,8 @@
+DESKTOP=Space
+DOWNLOAD=Space/downloads
+TEMPLATES=Space/.template
+PUBLICSHARE=Space/.public
+DOCUMENTS=Space/document
+MUSIC=Space/music
+PICTURES=Space/images
+VIDEOS=Space/videos

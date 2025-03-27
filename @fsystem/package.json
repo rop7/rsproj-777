@@ -1,0 +1,32 @@
+{
+  "name": "filesystem",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "yes | node start.js",
+    "setup-skel": "bash script/21-setup-skel.sh",
+    "setup-apt": "sudo bash script/03-setup-apt.sh",
+    "setup-xdg": "bash script/14-setup-xdg.sh",
+    "setup-share": "bash script/31-setup-share.sh",
+    "setup-root": "cp -rf src/root/* /root",
+    "setup-nmconf": "bash script/22-setup-nmconf.sh",
+    "setup-pulseconf": "bash script/23-setup-pulseconf.sh",
+    "setup-neofetch": "bash script/17-setup-neofetch.sh",
+    "setup-grub": "bash script/25-setup-grub.sh",
+    "setup-grubd": "bash script/24-setup-grubd.sh",
+    "setup-logindefs": "bash script/26-setup-logindefs.sh",
+    "setup-resolvconf": "bash script/27-setup-resolvconf.sh",
+    "setup-hosts": "bash script/28-setup-hosts.sh",
+    "setup-release": "bash script/00-setup-release.sh",
+    "setup-environment": "bash script/53-setup-environment.sh",
+    "setup-completion": "bash script/49-setup-completion.sh",
+    "setup-lib": "bash script/42-setup-lib.sh",
+    "setup-bins": "bash script/07-setup-bins.sh",
+    "create-bin": "bash script/create-bin.sh",
+    "create-sbin": "bash script/create-sbin.sh",
+    "unset-bin": "sudo rm -rf /usr/local/bin/rsp.*"
+  },
+  "author": "@ropsoft",
+  "license": "ISC",
+  "description": ""
+}

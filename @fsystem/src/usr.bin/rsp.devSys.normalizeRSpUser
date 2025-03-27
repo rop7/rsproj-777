@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Defina o usuário e o grupo
+usuario="rsp"
+grupo="rsp"
+diretorio="/home/rsp"
+
+# Mudar a propriedade para o usuário e grupo
+sudo chown -R $usuario:$grupo $diretorio
+
+# Definir as permissões recursivamente para arquivos e diretórios
+sudo find $diretorio -type d -exec chmod 755 {} \;  # Permissões 755 para diretórios
+sudo find $diretorio -type f -exec chmod 644 {} \;  # Permissões 644 para arquivos
+
+# Garantir que o usuário tenha permissão para executar diretórios
+sudo find $diretorio -type d -exec chmod +x {} \;
+
+echo "Permissões e propriedade normalizadas para o diretório $diretorio."
+
+exit 0

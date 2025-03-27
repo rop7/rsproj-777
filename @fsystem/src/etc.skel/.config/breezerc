@@ -1,0 +1,10 @@
+[Common]
+OutlineCloseButton=true
+OutlineIntensity=OutlineLow
+ShadowSize=ShadowSmall
+ShadowStrength=191
+
+[Windeco]
+ButtonSize=ButtonSmall
+DrawBackgroundGradient=true
+TitleAlignment=AlignLeft

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+sudo apt-get install -y $1 -y;
+
+# Use aspas corretamente ao passar o argumento para o jq
+ppp=".packages += [\"$1\"]"
+
+# Executa o jq para adicionar o item ao array
+jq "$ppp" /home/dev/rsp/developmentPackages.json > temp.json && mv temp.json /home/dev/rsp/developmentPackages.json
+
+# Exibe o conteúdo atualizado
+cat /home/dev/rsp/developmentPackages.json
+
+exit 0
+

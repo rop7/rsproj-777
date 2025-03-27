@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Diretório de backup
+BACKUP_DIR="$HOME/Space/backups"
+BACKUP_FILE="$BACKUP_DIR/backup_$(date +%Y%m%d%H%M%S).tar.gz"
+
+# Cria o diretório de backup se não existir
+mkdir -p "$BACKUP_DIR"
+
+# Diretório onde o NetworkManager armazena as conexões
+NM_CONNECTIONS_DIR="/etc/NetworkManager/system-connections"
+
+# Verifica se o diretório de conexões do NetworkManager existe
+if [[ ! -d "$NM_CONNECTIONS_DIR" ]]; then
+    echo "Diretório $NM_CONNECTIONS_DIR não encontrado. Verifique se o NetworkManager está instalado e configurado corretamente."
+    exit 1
+fi
+
+# Faz backup de todos os arquivos de rede no diretório de conexões
+echo "Iniciando backup das conexões de rede..."
+
+# Comprime o diretório de conexões em um arquivo .tar.gz
+sudo tar -czf "$BACKUP_FILE" -C "$NM_CONNECTIONS_DIR" .
+
+echo "Backup concluído! Arquivo salvo em: $BACKUP_FILE"

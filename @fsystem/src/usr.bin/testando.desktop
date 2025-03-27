@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=testando
+Exec=echo "Ação testando executada"
+Icon=utilities-terminal
+Terminal=true

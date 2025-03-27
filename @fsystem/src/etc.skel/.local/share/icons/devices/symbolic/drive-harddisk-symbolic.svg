@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="16"
+   viewBox="0 0 16 16"
+   width="16"
+   version="1.1"
+   id="svg50"
+   sodipodi:docname="drive-harddisk-symbolic.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb">
+  <sodipodi:namedview
+     id="namedview52"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="true"
+     inkscape:zoom="64.1875"
+     inkscape:cx="3.9104187"
+     inkscape:cy="7.9922103"
+     inkscape:window-width="2560"
+     inkscape:window-height="1371"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g48">
+    <inkscape:grid
+       type="xygrid"
+       id="grid281" />
+  </sodipodi:namedview>
+  <title
+     id="title2">Template icons dark</title>
+  <defs
+     id="defs30">
+    <linearGradient
+       id="a">
+      <stop
+         offset="0"
+         stop-color="#e1e3e7"
+         id="stop4" />
+      <stop
+         offset=".21"
+         stop-color="#dee1e4"
+         id="stop6" />
+      <stop
+         offset=".38"
+         stop-color="#f1f2f3"
+         id="stop8" />
+      <stop
+         offset=".67"
+         stop-color="#c2c6cd"
+         id="stop10" />
+      <stop
+         offset="1"
+         stop-color="#d7dadf"
+         id="stop12" />
+    </linearGradient>
+    <linearGradient
+       id="b">
+      <stop
+         offset="0"
+         stop-color="#eeda60"
+         id="stop15" />
+      <stop
+         offset="1"
+         stop-color="#db9918"
+         id="stop17" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#c"
+       id="j"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(.66667 0 0 .66667 34.848 62)"
+       x1="-153.424"
+       y1="-84"
+       x2="-129.424"
+       y2="-84" />
+    <linearGradient
+       id="c"
+       osb:paint="solid">
+      <stop
+         offset="0"
+         stop-color="#aaa"
+         id="stop21" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#c"
+       id="d"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(.66667 0 0 .66667 34.848 62)"
+       x1="-153.424"
+       y1="-84"
+       x2="-129.424"
+       y2="-84" />
+    <linearGradient
+       xlink:href="#c"
+       id="e"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(.66667 0 0 .66667 34.848 62)"
+       x1="-153.424"
+       y1="-84"
+       x2="-129.424"
+       y2="-84" />
+    <linearGradient
+       xlink:href="#c"
+       id="f"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(.66667 0 0 .66667 34.848 62)"
+       x1="-153.424"
+       y1="-84"
+       x2="-129.424"
+       y2="-84" />
+    <linearGradient
+       xlink:href="#c"
+       id="g"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(.66667 0 0 .66667 34.848 62)"
+       x1="-153.424"
+       y1="-84"
+       x2="-129.424"
+       y2="-84" />
+    <linearGradient
+       xlink:href="#c"
+       id="h"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(.66667 0 0 .66667 34.848 62)"
+       x1="-153.424"
+       y1="-84"
+       x2="-129.424"
+       y2="-84" />
+    <linearGradient
+       xlink:href="#c"
+       id="i"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(.66667 0 0 .66667 34.848 62)"
+       x1="-153.424"
+       y1="-84"
+       x2="-129.424"
+       y2="-84" />
+  </defs>
+  <g
+     color="#000"
+     id="g48">
+    <path
+       id="path32"
+       style="isolation:auto;mix-blend-mode:normal;marker:none"
+       d="m 2,1 v 13 c 0,1 1,1 1,1 H 4 L 5,14 H 4 c 0,0 -1,7.45e-4 -1,-1 V 2 C 3,2 3,1 4,1 h 8 c 1,0 1,1 1,1 v 11 c 0,1 -1,1 -1,1 h -1 l 1,1 h 1 c 1,0 1,-1 1,-1 V 1 C 14,1 14,0 13,0 H 3.006958 C 3.006958,0 2,0 2,1 Z"
+       sodipodi:nodetypes="ccccccccccccccccccccc" />
+    <path
+       style="isolation:auto;mix-blend-mode:normal;fill:#000000;fill-opacity:1;marker:none"
+       d="M 5,4 C 5,4 5,3 6.016363,3 H 9.988675 C 11,3 11,4 11,4 v 5 c 0,1 -1.008703,1 -1.008703,1 H 6.024234 C 6.024234,10 5,10 5,9 Z"
+       display="block"
+       overflow="visible"
+       opacity="0.41"
+       fill="url(#d)"
+       paint-order="fill markers stroke"
+       id="path34"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       id="rect458"
+       style="opacity:0.5;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-linecap:round;paint-order:fill markers stroke;stop-color:#000000"
+       d="m 6,13 h 4 l 2,2 H 4 Z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="path513"
+       style="opacity:0.623232;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-linecap:round;paint-order:fill markers stroke;stop-color:#000000"
+       d="M 4.5,2 C 4.2238579,2 4,2.2238579 4,2.5 4,2.7761421 4.2238579,3 4.5,3 4.7761421,3 5,2.7761421 5,2.5 5,2.2238579 4.7761421,2 4.5,2 Z m 7,0 C 11.223858,2 11,2.2238579 11,2.5 11,2.7761421 11.223858,3 11.5,3 11.776142,3 12,2.7761421 12,2.5 12,2.2238579 11.776142,2 11.5,2 Z m -7,9 C 4.2238579,11 4,11.223858 4,11.5 4,11.776142 4.2238579,12 4.5,12 4.7761421,12 5,11.776142 5,11.5 5,11.223858 4.7761421,11 4.5,11 Z m 7,0 C 11.223858,11 11,11.223858 11,11.5 11,11.776142 11.223858,12 11.5,12 11.776142,12 12,11.776142 12,11.5 12,11.223858 11.776142,11 11.5,11 Z" />
+  </g>
+  <metadata
+     id="metadata1063">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Template icons dark</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

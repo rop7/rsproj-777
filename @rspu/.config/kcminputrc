@@ -1,0 +1,7 @@
+[Libinput][10077][2982][USB OPTICAL MOUSE ]
+PointerAcceleration=0.400
+ScrollFactor=3
+ScrollMethod=4
+
+[Mouse]
+cursorSize=48

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+name=$2;
+path=$3;
+
+pm2 start "make deps && make && send-notify 'makeAsync proccess $2 finished'" --namespace makeAsync --name @"$2";
+pm2 status;
+
+exit 0;

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cd /usr/lib/rsp
+
+source /usr/lib/rsp/helper/sourceDeviceDiskPartition;
+
+mount $root_disk_partition /mnt
+
+mount --bind /dev /mnt/dev
+mount --bind /proc /mnt/proc
+mount --bind /sys /mnt/sys
+
+chroot /mnt /usr/lib/rsp/install/setupBootloader;
+
+exit 0;

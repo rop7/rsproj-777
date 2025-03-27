@@ -1,0 +1,96 @@
+#!/bin/bash
+
+# Função para exibir a ajuda
+show_help() {
+    echo "Uso: $0 [OPÇÕES] DIRETÓRIO"
+    echo "Opções:"
+    echo "  -s, --string    Procurar por uma string dentro de arquivos"
+    echo "  -f, --file      Procurar por arquivos com nome específico"
+    echo "  -r, --recursive Pesquisa recursivamente (padrão)"
+    echo "  -i, --ignore-case Ignorar maiúsculas e minúsculas"
+    echo "  -h, --help      Exibir essa ajuda"
+    exit 0
+}
+
+# Verifica se o usuário pediu ajuda
+if [[ "$1" == "-h" || "$1" == "--help" ]]; then
+    show_help
+fi
+
+# Verificando parâmetros
+if [[ $# -lt 2 ]]; then
+    echo "Erro: número insuficiente de parâmetros."
+    show_help
+fi
+
+# Definindo as variáveis
+recursive=true
+ignore_case=false
+search_type=""
+search_term=""
+dir=""
+
+# Processa os parâmetros
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        -s|--string)
+            search_type="string"
+            search_term="$2"
+            shift 2
+            ;;
+        -f|--file)
+            search_type="file"
+            search_term="$2"
+            shift 2
+            ;;
+        -r|--recursive)
+            recursive=true
+            shift
+            ;;
+        -i|--ignore-case)
+            ignore_case=true
+            shift
+            ;;
+        *)
+            dir="$1"
+            shift
+            ;;
+    esac
+done
+
+# Verificando se o diretório foi informado
+if [[ -z "$dir" ]]; then
+    echo "Erro: diretório não especificado."
+    show_help
+fi
+
+# Validando se o diretório existe
+if [[ ! -d "$dir" ]]; then
+    echo "Erro: o diretório '$dir' não existe."
+    exit 1
+fi
+
+# Função para procurar por string dentro de arquivos
+search_string() {
+    if [[ "$ignore_case" == true ]]; then
+        grep -ri "$search_term" "$dir"
+    else
+        grep -r "$search_term" "$dir"
+    fi
+}
+
+# Função para procurar por arquivos específicos
+search_file() {
+    find "$dir" -type f -name "$search_term"
+}
+
+# Verifica o tipo de busca
+if [[ "$search_type" == "string" ]]; then
+    search_string
+elif [[ "$search_type" == "file" ]]; then
+    search_file
+else
+    echo "Erro: tipo de pesquisa não especificado corretamente."
+    exit 1
+fi
+

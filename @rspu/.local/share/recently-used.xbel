@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/rsp/.config/rsp/mix/thunderbird-fix.css" added="2024-12-17T18:41:34.577159Z" modified="2024-12-17T18:41:34.577165Z" visited="2024-12-17T18:41:34.577159Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/css"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunderbird" exec="&apos;thunderbird-default %u&apos;" modified="2024-12-17T18:41:34.577161Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/rsp/rsp.zip" added="2024-12-26T15:24:03.826799Z" modified="2024-12-26T18:08:22.644409Z" visited="2024-12-26T15:24:03.826800Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2024-12-26T18:08:22.644408Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/rsp/3BAEB3510F38D6A7" added="2024-12-26T15:24:53.395467Z" modified="2024-12-26T15:24:53.395478Z" visited="2024-12-26T15:24:53.395468Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;org.gnome.FileRoller %u&apos;" modified="2024-12-26T15:24:53.395472Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/rsp/3BAEB3510F38D6A7/rsp.zip" added="2024-12-26T15:24:59.028572Z" modified="2024-12-26T15:24:59.028611Z" visited="2024-12-26T15:24:59.028572Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2024-12-26T15:24:59.028585Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/rsp.zip" added="2024-12-26T15:28:20.903077Z" modified="2024-12-26T15:28:20.903094Z" visited="2024-12-26T15:28:20.903079Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;org.gnome.FileRoller %u&apos;" modified="2024-12-26T15:28:20.903087Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/rsp" added="2024-12-26T15:28:33.300128Z" modified="2024-12-26T15:28:33.300140Z" visited="2024-12-26T15:28:33.300130Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;org.gnome.FileRoller %u&apos;" modified="2024-12-26T15:28:33.300133Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/rsp/rsppp.zip" added="2024-12-26T15:31:30.942223Z" modified="2024-12-26T15:31:30.942226Z" visited="2024-12-26T15:31:30.942224Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2024-12-26T15:31:30.942224Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/rsp/Ventoy" added="2024-12-26T15:33:39.016599Z" modified="2024-12-26T15:33:39.016603Z" visited="2024-12-26T15:33:39.016600Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;org.gnome.FileRoller %u&apos;" modified="2024-12-26T15:33:39.016601Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/rsp/Ventoy/rsp.zip" added="2024-12-26T15:33:43.769049Z" modified="2024-12-26T15:33:43.769090Z" visited="2024-12-26T15:33:43.769051Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2024-12-26T15:33:43.769054Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/rsp/Space/installer.desktop" added="2024-12-29T00:22:34.378047Z" modified="2024-12-29T00:26:05.728963Z" visited="2024-12-29T00:22:34.378047Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-desktop"/>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2024-12-29T00:26:05.728959Z" count="14"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/rsp/Space/mnt/network-settings.desktop" added="2025-01-03T20:30:12.671049Z" modified="2025-01-03T20:31:32.802919Z" visited="2025-01-03T20:30:12.671049Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-desktop"/>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2025-01-03T20:31:32.802915Z" count="10"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

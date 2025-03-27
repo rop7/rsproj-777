@@ -1,0 +1,8 @@
+name: initramfs_tools
+check_this_dir: /etc/initramfs-tools
+enable_lvm:
+  - echo "This operations not required."
+enable_luks:
+  - sed -i "s/^GRUB_THEME=.*/GRUB_THEME=\"\"/g" /target/etc/default/grub
+commands:
+  - if [[ -f /usr/sbin/update-initramfs.orig.initramfs-tools ]] ; then update-initramfs.orig.initramfs-tools -c -t -k all ; else update-initramfs -u -t -k all; fi

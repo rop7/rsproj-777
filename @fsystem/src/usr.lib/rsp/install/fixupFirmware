@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Installing firmware packages.."
+
+sudo remove firmware-linux* -y --purge;
+sudo apt-get update
+sudo apt-get reinstall -y firmware-linux*
+sudo apt-get update
+sudo apt-get upgrade -y
+
+exit 0;

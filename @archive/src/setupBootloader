@@ -1,0 +1,44 @@
+#!/bin/bash
+
+WRAPPER="`readlink -f "$0"`"
+HERE="`dirname "$WRAPPER"`"
+
+echo Entering /usr/lib/rsp/asset
+
+    sleep 3
+    cd $HERE;
+    cd ..;
+    cd asset
+    pwd && ls
+    sleep 3
+
+echo Installing rsp grub on /boot
+
+    sleep 3;
+    rm -rf /boot/efi/EFI
+    mkdir -p /boot/efi
+    cp -rf EFI /boot/efi
+    chown root /boot/efi -R
+
+echo Setting up grub default config...
+
+    sleep 3;
+    cp -rf grub /etc/default/grub
+
+# echo Ensuring removal of "/etc/default/grub.d"
+
+    # sleep 3;
+    # sudo rm -rf /etc/default/grub.d
+
+echo Installing grub...
+
+    sleep 3;    
+    source /usr/lib/rsp/helper/sourceDeviceDisk
+    grub-install "$root_disk"
+
+echo Updating grub...
+    
+    sleep 3;
+    update-grub;
+
+exit 0;

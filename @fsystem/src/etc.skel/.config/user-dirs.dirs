@@ -1,0 +1,8 @@
+XDG_DESKTOP_DIR="$HOME/Space"
+XDG_DOWNLOAD_DIR="/home/@NewUser/Space/downloads"
+XDG_TEMPLATES_DIR="/home/@NewUser/Space/.template"
+XDG_PUBLICSHARE_DIR="/home/@NewUser/Space/.public"
+XDG_DOCUMENTS_DIR="/home/@NewUser/Space/document"
+XDG_MUSIC_DIR="/home/@NewUser/Space/music"
+XDG_PICTURES_DIR="/home/@NewUser/Space/images"
+XDG_VIDEOS_DIR="/home/@NewUser/Space/videos"

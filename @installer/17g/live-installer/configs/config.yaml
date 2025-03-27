@@ -1,0 +1,98 @@
+### 17g installer config
+
+## Distro section
+distro_codename: "@RSp LINUX/GNU"
+distro_title: "@RSp"
+# distribution: auto
+display_manager: false
+copyright: "@ropsoft"
+
+## Base options section
+# loop_directory: /dev/loop0
+# log_file: /var/log/17g-installer.log
+# gtk_theme: default
+# welcome_screen: true
+# exclude_dirs:
+#   - /home
+customizer_address: rsp
+
+## Base system section
+# initramfs_system: auto 
+# using_shell: /bin/bash
+# use_reboot: true
+# netinstall: false
+# use_rsync: true
+# use_unsquashfs: true
+# remove_packages:
+#   - 17g-installer
+
+## User section
+# autologin_enabled: true
+auto_partition_enabled: true
+# set_root_password: true
+# use_chpasswd: true
+# use_usermod: true
+keep_userdata: true
+minimal_instalation_enabled: false
+# keyboard_preview: true
+# additional_user_groups:
+#   - audio
+#   - video
+#   - netdev
+
+## Partitioning section
+manual_partition_enabled: true
+# use_swap: false
+# swap_size: 2048
+# replace_windows_enabled: true
+# lvm_enabled: true
+# encryption_enabled: true
+# fill_disk_enabled: true
+# fullscreen: false
+# partition_editor: gparted
+
+## Timezone and locale section
+default_locale: pt_BR
+default_timezone: America/Recife
+
+## Setup page section
+skip_eula: true
+
+# skip_language: false
+# skip_timezone: false
+# skip_keyboard: false
+# skip_options: false
+
+skip_user: true
+skip_partition: false
+
+# hide_keyboard_model: false
+allow_uppercase_hostname: false
+# allow_week_password: true
+# allow_auto_novariant: false
+# min_password_length: 1
+
+post_install_hook:
+   - echo "Fixing hostname..."
+   - sudo rm -rf /target/etc/hostname
+   - sudo echo "rsp" >> /target/etc/hostname
+   - echo "Removing system installer..."
+   - sudo rm -rf /target/home/rsp/.17g
+   - sudo rm -rf /target/home/rsp/Space/installer.desktop
+   - sudo rm -rf /target/home/rsp/Space/target
+   - echo "Removing deployment status files from /var"
+   - sudo rm -rf /target/var/.isProductionDeploy
+   - sudo rm -rf /target/var/.isDevelopmentDeploy
+   - echo "Creating /var/.isFirstRun state..."
+   - sudo touch /target/var/.isFirstRun
+   - echo "Ready to reboot"
+
+## Pre/Post operations section
+# post_install_hook:
+#   - echo "BRUH"
+# pre_install_hook:
+#   - echo "BRUH"
+# pre_rsync_hook:
+#   - echo "BRUH"
+# post_rsync_hook:
+#   - echo "BRUH"

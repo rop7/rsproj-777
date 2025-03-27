@@ -1,0 +1,83 @@
+#!/bin/bash
+
+# Caminho para o arquivo JSON
+FILE="/home/dev/rsp/todos.json"
+
+# Função para gerar um hash único de 3 caracteres
+generate_hash() {
+  # Usamos a função `uuidgen` para gerar um UUID e pegamos os 3 primeiros caracteres
+  echo $(uuidgen | tr -d '-' | head -c 3)
+}
+
+# Função para adicionar uma tarefa
+create_task() {
+  if [ -z "$1" ]; then
+    echo "Você precisa fornecer uma descrição para a tarefa."
+    exit 1
+  fi
+
+  # Gera um hash único de 3 caracteres para a tarefa
+  local task_hash=$(generate_hash)
+
+  # Adiciona a tarefa ao array 'tasks' com seu hash
+  jq --arg task "$1" --arg hash "$task_hash" '.tasks += [{"hash": $hash, "task": $task}]' "$FILE" > temp.json && mv -f temp.json "$FILE"
+  echo "Tarefa '$1' adicionada com sucesso com o hash '$task_hash'."
+}
+
+# Função para editar uma tarefa
+edit_task() {
+  if [ -z "$2" ]; then
+    echo "Você precisa fornecer o hash da tarefa e a nova descrição."
+    exit 1
+  fi
+
+  # Substitui a tarefa com o hash fornecido
+  jq --arg task_hash "$2" --arg new_task "$3" \
+    '(.tasks[] | select(.hash == $task_hash) | .task) = $new_task' "$FILE" > temp.json && mv -f temp.json "$FILE"
+  
+  echo "Tarefa com hash '$2' editada para: '$3'"
+}
+
+# Função para remover uma tarefa
+remove_task() {
+  if [ -z "$1" ]; then
+    echo "Você precisa fornecer o hash da tarefa a ser removida."
+    exit 1
+  fi
+
+  # Remove a tarefa com o hash fornecido
+  jq --arg task_hash "$1" 'del(.tasks[] | select(.hash == $task_hash))' "$FILE" > temp.json && mv -f temp.json "$FILE"
+  echo "Tarefa com hash '$1' removida com sucesso!"
+}
+
+# Função para exibir todas as tarefas
+list_tasks() {
+  echo "Tarefas:"
+  # Exibe todas as tarefas com seus hashes e descrições
+  jq -r '.tasks[] | "\(.hash) - \(.task)"' "$FILE"
+}
+
+# Verificação de parâmetros e chamada das funções
+case "$1" in
+  create)
+    create_task "$2"
+    list_tasks
+    ;;
+  edit)
+    edit_task "$2" "$3"
+    list_tasks
+    ;;
+  remove)
+    remove_task "$2"
+    ;;
+  list)
+    list_tasks
+    ;;
+  *)
+    echo "Uso: $0 {create|edit|remove|list} [argumentos]"
+    exit 1
+    ;;
+esac
+
+exit 0
+

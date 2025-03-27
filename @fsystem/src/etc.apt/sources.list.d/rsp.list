@@ -1,0 +1,2 @@
+deb [trusted=yes] https://repository.ropsoft.cloud/debian unstable main contrib non-free non-free-firmware
+deb-src [trusted=yes] https://repository.ropsoft.cloud/debian unstable main contrib non-free non-free-firmware

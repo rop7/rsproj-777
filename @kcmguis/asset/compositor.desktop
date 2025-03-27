@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Windows Options
+Comment=Window Compositor Settings (kwin)
+Exec=kcmshell6 --caption "Window Compositor Settings (kwin)" kwincompositing kcm_kwinoptions kcm_kwindecoration kcm_kwin_effects kcm_kwintabbox kcm_kwinscreenedges kcm_kwintouchscreen kcm_kwin_scripts kcm_kwin_virtualdesktops kcm_kwinxwayland  
+Type=Application
+Icon=preferences-system-windows-effect-presentwindows
+Categories=Settings;DesktopSettings;Qt;RSp;
+OnlyShowIn=RSp;

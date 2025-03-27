@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=File Actions
+Comment=Configure items to be added to the Caja context menus
+Exec=caja-actions-config-tool
+Icon=caja-actions
+Categories=Settings;DesktopSettings;Qt;RSp;
+OnlyShowIn=RSp;
+StartupNotify=true

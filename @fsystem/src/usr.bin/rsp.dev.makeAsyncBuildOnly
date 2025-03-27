@@ -1,0 +1,10 @@
+#!/bin/bash
+
+name=$2;
+path=$3;
+
+pm2 start "make deps && make make && 'makeAsyncBuildOnly proccess $2 finished'" --namespace makeAsyncBuildOnly --name $2;
+
+exit 0;
+
+

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=PulseEffects
+GenericName=Equalizer, Compressor and Other Audio Effects
+Comment=Audio Effects for PulseAudio Applications
+Exec=pulseeffects
+Icon=pulseeffects
+StartupNotify=true
+DBusActivatable=true
+X-GNOME-UsesNotifications=true
+Terminal=false
+Type=Application
+Categories=Settings;DesktopSettings;Qt;RSp;
+OnlyShowIn=RSp;

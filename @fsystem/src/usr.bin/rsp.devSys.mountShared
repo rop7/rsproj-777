@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo mount -t 9p -o trans=virtio shared /mnt
+sudo ln -sf /mnt /home/rsp/Space
+
+exit 0

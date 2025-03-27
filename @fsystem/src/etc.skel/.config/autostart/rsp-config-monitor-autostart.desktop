@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=Autostart monitor settings for RSp-config-monitor
+Exec=rsp-config-monitor -l
+Name=rsp-config-monitor-autostart
+OnlyShowIn=RSp
+Type=Application
+Version=1.0

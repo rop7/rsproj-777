@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Windows Rules
+Comment=Window Compositor Rules (kwin)
+Exec=kcmshell6 --caption "Window Compositor Rules (kwin)" kcm_kwinrules
+Type=Application
+Icon=preferences-system-windows-effect-wobblywindows
+Categories=Settings;DesktopSettings;Qt;RSp;
+OnlyShowIn=RSp;

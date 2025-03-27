@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Usando lsblk para listar os dispositivos e suas partições
+# Filtrando para pegar discos do tipo 'disk' e as partições do tipo 'part', e excluindo loop, fd, sr, etc.
+#PRIMARY_PARTITION=$(lsblk -o NAME,TYPE | grep -E "disk|part" | grep -vE "(loop|fd|sr)" | awk '$2 == "part" {print $1}' | head -n 1)
+
+# Verifica se encontramos a primeira partição persistente
+#if [ -z "$PRIMARY_PARTITION" ]; then
+#    echo "Não foi possível identificar a primeira partição persistente."
+#    exit 1
+#fi
+
+# Limpeza de qualquer caractere extra indesejado (ex: backticks ou espaços)
+#PRIMARY_PARTITION=$(echo "$PRIMARY_PARTITION" | tr -d '`-' | tr -d '├' | tr -d '─' |  tr -d '[:space:]')
+
+# Monta o caminho completo da partição primária
+#root_disk="/dev/$PRIMARY_PARTITION"
+
+# Exibe a partição primária identificada
+#echo "A primeira partição persistente identificada é: $root_disk"
+
+# Exporta a variável, se necessário
+#root_disk_partition=$root_disk
+
+#export root_disk_partition
+
+# ─
+
+source /home/rsp/.installer/sourceDiskPartition.sh
+
+root_disk_partition=$disk_partition
+
+export root_disk_partition;

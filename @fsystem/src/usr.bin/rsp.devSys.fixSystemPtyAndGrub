@@ -1,0 +1,70 @@
+#!/bin/bash
+
+source /usr/lib/rsp/helper/soureDeviceDisk;
+
+echo "Updating/upgrading system"
+
+apt-get update;
+apt-get upgrade -y;
+
+echo "Reinstalling come essential packages"
+
+su -c 'apt-get install -y --reinstall sudo'
+su -c 'apt-get install -y --reinstall debconf'
+su -c 'apt-get install -y --reinstall xterm*'
+
+# Step 1: Fix /dev/pts issue
+echo "Fixing /dev/pts..."
+
+# Check if /dev/pts is mounted, if not, mount it
+if ! mount | grep -q "devpts"; then
+    echo "Mounting /dev/pts..."
+    mount -t devpts devpts /dev/pts
+else
+    echo "/dev/pts is already mounted."
+fi
+
+# Ensure it's mounted at boot by adding it to /etc/fstab
+if ! grep -q "/dev/pts" /etc/fstab; then
+    echo "Adding /dev/pts entry to /etc/fstab..."
+    echo "devpts   /dev/pts  devpts  defaults  0  0" >> /etc/fstab
+else
+    echo "/dev/pts is already in /etc/fstab."
+fi
+
+# Step 2: Load the devpts kernel module if not already loaded
+if ! lsmod | grep -q "devpts"; then
+    echo "Loading devpts module..."
+    modprobe devpts
+else
+    echo "devpts module is already loaded."
+fi
+
+# Step 3: Fix GRUB configuration
+echo "Fixing GRUB configuration..."
+
+# Reinstall GRUB packages if necessary
+if ! dpkg -l | grep -q "grub"; then
+    echo "Reinstalling GRUB packages..."
+    apt-get install --reinstall -y grub-common grub-pc
+else
+    echo "GRUB packages are already installed."
+fi
+
+# Reinstall GRUB to the boot device
+echo "Reinstalling GRUB to $root_disk"
+grub-install $root_disk
+
+# Fix permissions of /etc/grub.d/ if necessary
+echo "Fixing permissions in /etc/grub.d/..."
+chown -R root:root /etc/grub.d/
+chmod -R 755 /etc/grub.d/
+
+# Step 4: Regenerate GRUB configuration
+echo "Regenerating GRUB configuration..."
+update-grub
+
+# Step 5: Reboot the system
+echo "Rebooting system..."
+reboot
+

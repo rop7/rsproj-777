@@ -1,0 +1,81 @@
+#!/usr/local/bin/rsp.nodeJS
+
+const RSp = require("rsp-libjscript");
+const rsp = new RSp();
+const path = require("path");
+
+// Obtém o nome do usuário da variável de ambiente
+const username = process.env.USER;
+
+if (!username) {
+    rsp.prin("Erro: Nome do usuário não foi fornecido.", { type: "error" });
+    process.exit(1);
+}
+
+(async () => {
+    
+    try {
+
+        rsp.prompt(async ({ askBoolean }) => {
+
+            const isAdmin = await askBoolean("New user is to be administrator?");
+
+            if (isAdmin) {
+            
+                try {
+                    
+                    rsp.prin(`Adding "${username}" to adm and sudo groups`);
+
+                    rsp.exec(`usermod -a -G adm ${username}`);
+                    rsp.exec(`usermod -a -G sudo ${username}`);
+
+                    rsp.prin(`Adding "${username}" sudoers.d file`);
+                    rsp.exec(`echo "${username} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/${username}`)
+
+                } catch (error) {
+                    rsp.prin(`Erro ao adicionar o usuário "${username}" aos grupos: ${error.message}`, { type: "error" });
+                }
+    
+            } else {
+                rsp.prin(`Usuário "${username}" configurado como comum.`);
+            }
+
+            setupNewUserSkel();
+        });
+
+        function setupNewUserSkel () {
+
+            const userHome = getHomeDirectory();
+
+            try {
+                
+                rsp.prin(`Copying skel for new user: "${username}"`);
+                
+                rsp.exec(`cd ${userHome} && sudo cp -rf /etc/skel/* .`);
+
+                rsp.prin(`Branding "${username}" home directory`);
+                rsp.exec(`cd ${userHome} && /usr/local/bin/rsp.projectRebrandir @NewUser ${username}`)
+                
+            } catch (error) {
+                rsp.prin(`Erro ao executar o rebranding para "${username}": ${error.message}`, { type: "error" });
+            }
+
+        }
+
+        function getHomeDirectory () {
+            
+            const userHome = path.join("/home", username);
+
+            if (!userHome) {
+                rsp.prin(`Erro ao localizar o diretório do usuário: ${username}.`, { type: "error" });
+                process.exit(1);
+            }
+            
+            return userHome;
+        }
+
+    } catch (error) {
+        rsp.prin(`Erro inesperado: ${error.message}`, { type: "error" });
+        process.exit(1);
+    }
+})();

@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=Settings;DesktopSettings;Qt;RSp;
+OnlyShowIn=RSp;
+Type=Application
+Exec=rspcloud %u
+Name=~@RspCloud
+Comment=Rspcloud desktop synchronization client
+GenericName=Folder Sync
+Icon=Rspcloud
+Keywords=Rspcloud;syncing;file;sharing;
+MimeType=application/vnd.rspcloud;x-scheme-handler/nc;
+SingleMainWindow=true
+Actions=Quit;
+
+[Desktop Action Quit]
+Exec=rspcloud --quit
+Name=Quit ~rspCloud
+Icon=Rspcloud

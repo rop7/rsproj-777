@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Verificar se o arquivo /var/.isOsReleaseNormalized existe
+if [ ! -f /var/.isOsReleaseNormalized ]; then
+
+  # Bloco de código a ser executado caso o arquivo não exista
+  echo "O arquivo não existe. Executando o código..."
+
+  # (Aqui vai o seu bloco de código a ser executado)
+  rm -rf /etc/os-release
+  cp -rf /usr/lib/rsp/asset/os-release /etc/os-release
+  rm -rf /var/run/host/os-release
+  cp -rf /usr/lib/rsp/asset/os-release /var/run/host/os-release
+
+  # Exemplo: Normalizando as configurações
+  echo "Normalizando os dados..." 
+  # Adicione aqui os comandos para normalizar a configuração do sistema, se necessário.
+
+  # Criar o arquivo para indicar que a normalização foi feita
+  touch /var/.isOsReleaseNormalized
+
+else
+  echo "O arquivo já existe. Nada a fazer."
+fi

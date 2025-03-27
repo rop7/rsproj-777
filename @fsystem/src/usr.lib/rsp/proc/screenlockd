@@ -1,0 +1,7 @@
+#1/bin/bash
+
+# Bloqueio com um timer de 5 minutos e fundo preto
+exec idleman \
+    -w \
+    timeout 300 'screenlock -f -c 000000 -i /usr/share/images/rsp/screenlock-background.png' \
+    before-sleep 'screenlock -f -c 000000'

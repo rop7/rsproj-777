@@ -1,0 +1,11 @@
+[Unit]
+Description=Verifica se o usuário @rsp existe e o remove, se necesário
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/lib/rsp/helper/checkRspUserForRemoval
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target

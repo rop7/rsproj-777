@@ -1,0 +1,63 @@
+#!/bin/bash
+
+echo "Updating & upgrading packages"
+
+    sudo apt-get update && sudo apt-get upgrade -y;
+
+echo "Removing & purging non-needed packages"
+
+    sudo apt-get autoremove --purge -y;
+    sudo apt-get autoclean -y;
+    sudo apt-get clean -y;
+    sudo apt-get autopurge -y;
+    sudo nala clean;
+    sudo nala clean --lists
+
+echo "Removing unecessary settings .desktop files"
+
+    sudo rm -rf /usr/share/applications/cact.desktop
+    sudo rm -rf /usr/share/applications/org.kde.mobile.plasmasettings.desktop
+    sudo rm -rf /usr/share/applications/kdesystemsettings.desktop
+    sudo rm -rf /usr/local/share/applications/rsp-config-input.desktop
+    sudo rm -rf /usr/local/share/applications/rsp-config-globalkeyshortcuts.desktop
+    sudo rm -rf /usr/share/applications/kvantum*
+
+echo "Removing residual build-setup time garbage"
+
+    sudo rm -rf /tmp/*
+    sudo rm -rf /var/cache/*
+    sudo rm -rf /var/tmp/*
+    sudo rm -rf /root/.cache
+    sudo rm -rf /root/.bash_history
+    
+    rm -rf ~/.cache
+    rm -rf ~/.bash_history
+
+echo "Fixing .desktop files"
+
+    sudo rm -rf /usr/share/applications/cact.desktop
+    sudo cp  -rf ./asset/caja.desktop /usr/share/applications
+
+echo "Uninstalling unecessary packages maybe installed"
+
+    sudo apt-get remove kdeconnect* -y --purge
+    sudo apt-get remove xwaylandvieobrigde -y --purge
+    sudo apt-get remove plasma-discover* -y --purge
+    sudo apt-get remove plasma-welcome -y --purge
+    sudo apt-get remove plasma-emojier -y --purge
+
+echo "Reinstalling possible broken packages"
+
+   sudo apt-get reinstall polkit* -y
+   sudo apt-get reinstall -y libwayland*
+   sudo apt-get reinstall -y wayland*
+   sudo apt-get reinstall -y libxkbcommon-*
+   sudo apt-get reinstall qt6-wayland* -y
+   sudo apt-get reinstall grub2 grub2-common -y
+
+# ~
+
+sudo apt-get update;
+sudo apt-get upgrade -y;
+
+exit 0;

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 16.933 16.933"
+   version="1.1"
+   id="svg33"
+   sodipodi:docname="figma.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview35"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="16.046875"
+     inkscape:cx="31.968841"
+     inkscape:cy="31.968841"
+     inkscape:window-width="2400"
+     inkscape:window-height="1281"
+     inkscape:window-x="1920"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg33">
+    <inkscape:grid
+       type="xygrid"
+       id="grid346" />
+  </sodipodi:namedview>
+  <defs
+     id="defs13">
+    <filter
+       id="a"
+       x="-0.035983371"
+       y="-0.035983371"
+       width="1.0719667"
+       height="1.0719667"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         stdDeviation=".238"
+         id="feGaussianBlur2" />
+    </filter>
+    <filter
+       id="c"
+       x="-0.075039959"
+       y="-0.050026649"
+       width="1.1500799"
+       height="1.1000533"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         stdDeviation=".938"
+         id="feGaussianBlur5" />
+    </filter>
+    <linearGradient
+       id="b"
+       x1="9.26"
+       x2="9.26"
+       y1="-.262"
+       y2="15.612"
+       gradientTransform="translate(-.794 .792)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#2e323e"
+         offset="0"
+         id="stop8" />
+      <stop
+         stop-color="#505664"
+         offset="1"
+         id="stop10" />
+    </linearGradient>
+    <filter
+       id="a-3"
+       x="-0.03888"
+       y="-0.03888"
+       width="1.07776"
+       height="1.07776"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         stdDeviation=".972"
+         id="feGaussianBlur929" />
+    </filter>
+    <linearGradient
+       id="b-6"
+       x1="-16.756781"
+       x2="-58.772217"
+       y1="13.407513"
+       y2="49.094738"
+       gradientTransform="matrix(0.25204294,0,0,0.25204294,18.20751,0.4957051)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#31343b"
+         offset="0"
+         id="stop924"
+         style="stop-color:#5d354d;stop-opacity:1;" />
+      <stop
+         stop-color="#5f6979"
+         offset="1"
+         id="stop926"
+         style="stop-color:#314943;stop-opacity:1;" />
+    </linearGradient>
+  </defs>
+  <circle
+     cx="32"
+     cy="32"
+     r="30"
+     filter="url(#a)"
+     opacity="0.15"
+     style="isolation:isolate;paint-order:stroke fill markers;filter:url(#a-3)"
+     id="circle934"
+     transform="matrix(0.25204294,0,0,0.25204294,0.42764517,0.38984708)" />
+  <circle
+     cx="8.4930191"
+     cy="8.4552202"
+     r="7.5612884"
+     fill="url(#b)"
+     style="isolation:isolate;fill:url(#b-6);stroke-width:0.252043;paint-order:stroke fill markers"
+     id="circle936" />
+  <path
+     transform="scale(.26458)"
+     d="M24.5 9.5A7.484 7.484 0 0 0 17 17c0 4.155 3.345 7.5 7.5 7.5A7.484 7.484 0 0 0 17 32c0 4.155 3.345 7.5 7.5 7.5A7.5 7.5 0 0 0 17 47a7.5 7.5 0 0 0 7.5 7.5A7.5 7.5 0 0 0 32 47V24.5h7.5c4.155 0 7.5-3.345 7.5-7.5 0-4.155-3.345-7.5-7.5-7.5h-15zm15 15A7.5 7.5 0 0 0 32 32a7.5 7.5 0 0 0 7.5 7.5A7.5 7.5 0 0 0 47 32a7.5 7.5 0 0 0-7.5-7.5z"
+     filter="url(#c)"
+     opacity=".15"
+     id="path19" />
+  <path
+     d="M 6.482,10.451 A 1.984,1.984 0 0 0 4.498,12.435 1.984,1.984 0 0 0 6.482,14.42 1.984,1.984 0 0 0 8.467,12.435 V 10.451 Z"
+     fill="#09c37b"
+     id="path21"
+     style="stroke-width:0.265;fill:#09ce82;fill-opacity:1" />
+  <path
+     d="m 6.482,6.482 h 1.985 v 3.969 H 6.482 A 1.98,1.98 0 0 1 4.498,8.467 c 0,-1.1 0.885,-1.985 1.984,-1.985 z"
+     fill="#9154dd"
+     id="path23"
+     style="stroke-width:0.265;fill:#955cdc;fill-opacity:1" />
+  <circle
+     cx="10.45091"
+     cy="8.4669104"
+     r="1.984"
+     fill="#01b1f8"
+     id="circle25"
+     style="fill:#19bcfe;fill-opacity:1;stroke-width:0.265" />
+  <path
+     d="M 6.482,2.513 A 1.98,1.98 0 0 0 4.498,4.498 c 0,1.099 0.885,1.984 1.984,1.984 H 8.467 V 2.513 Z"
+     fill="#f24e1e"
+     id="path27"
+     style="stroke-width:0.265;fill:#ff6cae;fill-opacity:1" />
+  <path
+     d="m 8.467,2.513 h 1.984 c 1.1,0 1.984,0.885 1.984,1.985 A 1.98,1.98 0 0 1 10.451,6.482 H 8.467 Z"
+     fill="#ff7262"
+     id="path29"
+     style="stroke-width:0.265;fill:#ff24a5;fill-opacity:1" />
+  <circle
+     cx="8.4930191"
+     cy="8.4552202"
+     r="7.4373326"
+     fill="url(#b)"
+     style="isolation:isolate;fill:none;stroke:#ffffff;stroke-width:0.247911;stroke-opacity:0.0694794;paint-order:stroke fill markers"
+     id="circle2354" />
+  <path
+     id="path2408"
+     style="stroke-width:0.265;fill:#fce2fd;fill-opacity:0.13472192"
+     d="M 6.4821641 6.4821641 C 5.3831652 6.4821641 4.4978281 7.3670179 4.4978281 8.4670168 A 1.98 1.98 0 0 0 6.4821641 10.450836 L 7.2758984 10.450836 A 1.98 1.98 0 0 1 5.2915625 8.4670168 C 5.2915625 7.3670179 6.1768995 6.4821641 7.2758984 6.4821641 L 6.4821641 6.4821641 z " />
+  <path
+     id="path2413"
+     style="fill:#fab6b7;fill-opacity:0.22539784;stroke-width:0.265"
+     d="m 6.4821641,2.513492 c -1.0989989,0 -1.984336,0.8848539 -1.984336,1.9848528 a 1.98,1.98 0 0 0 1.984336,1.9838191 H 7.2758984 A 1.98,1.98 0 0 1 5.2915625,4.4983448 c 0,-1.0999989 0.885337,-1.9848528 1.9843359,-1.9848528 z" />
+</svg>

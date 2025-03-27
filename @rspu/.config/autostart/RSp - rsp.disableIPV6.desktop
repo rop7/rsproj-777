@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=sudo /usr/local/bin/rsp.disableIPV6
+Name=RSp - rsp.disableIPV6
+Type=Application
+Version=1.0

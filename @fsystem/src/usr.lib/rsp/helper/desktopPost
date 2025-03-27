@@ -1,0 +1,5 @@
+#!/bin/bash
+
+source /usr/lib/rsp/helper/desktopEnvironment;
+
+exec /usr/local/bin/rsp-session;

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=pulseeffects --gapplication-service
+Hidden=false
+NoDisplay=false
+Name=PulseEffects (Daemon)
+Comment=Start PulseEffects in daemon mode

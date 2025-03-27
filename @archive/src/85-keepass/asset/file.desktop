@@ -1,0 +1,14 @@
+[Desktop Entry]
+Categories=Settings;DesktopSettings;Qt;RSp;
+OnlyShowIn=RSp;
+Type=Application
+Exec=keepassrsp %u
+Name=~@KeePassRSP
+Comment=KeePassRSP desktop synchronization client
+GenericName=Folder Sync
+Icon=application-x-keepassrsp
+Keywords=security;privacy;password-manager;yubikey;password;keepass;
+Keywords[de]=sicherheit;privatsphäre;passwort-manager;yubikey;passwort;keepass;
+MimeType=application/x-keepass2;
+SingleMainWindow=true
+Actions=Quit;

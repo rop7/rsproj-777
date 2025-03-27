@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=RSp Kwin (Wayland)
+Comment=RSp Session using kwin_wayland compositor
+Exec=startrspkwin
+Type=Application
+Icon=kwin
+

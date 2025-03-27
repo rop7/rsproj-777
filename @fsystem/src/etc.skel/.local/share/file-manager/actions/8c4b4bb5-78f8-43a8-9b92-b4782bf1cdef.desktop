@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Action
+ToolbarLabel[en_US]=New Caja action
+ToolbarLabel[en]=New Caja action
+ToolbarLabel[C]=New Caja action
+Name[en_US]=New Caja action
+Name[en]=New Caja action
+Name[C]=New Caja action
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Name[en_US]=Default profile
+Name[en]=Default profile
+Name[C]=Default profile

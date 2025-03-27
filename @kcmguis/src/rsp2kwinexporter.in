@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Set keyboard layout for kwin_wayland
+kxkbrc=$XDG_CONFIG_HOME/kxkbrc
+#kwin_layout=$(cat $kxkbrc |grep  LayoutList|cut -d '=' -f2-)
+rsp_settings=$XDG_CONFIG_HOME/rsp/session.conf
+
+if grep -q layout "$rsp_settings"; then
+    echo "Existing keyboard layout setting found in RSp"
+    layout_list="LayoutList=$(cat $rsp_settings| grep  layout| sed 's/[^=]*=["]*\([^"]*\)["]*/\1/')"
+    else
+    echo "Not configured under RSp x11, using '$LANG' as fallback"
+    layout_list="LayoutList=$(echo $LANG|cut -c 1,2)"
+    if echo "layout_list" | grep -q "en"; then # don't write `LayoutList=en`
+    layout_list=LayoutList=us
+    fi
+fi
+
+# Check if kwin keyboard config file exists
+if [ -f $XDG_CONFIG_HOME/kxkbrc ]; then
+echo "kxkbrc found"
+    # Check if the file contains "LayoutList"
+    if grep -q "LayoutList" "$kxkbrc"; then
+        echo "Layout already configured for Kwin"
+    else
+        echo "kxkbrc does not contain 'LayoutList, exporting...'"
+        echo $layout_list >> $XDG_CONFIG_HOME/kxkbrc
+    fi
+else
+    echo "No kxkbrc found, creating keyboard settings"
+    echo "[Layout]" > $XDG_CONFIG_HOME/kxkbrc
+    echo $layout_list >> $XDG_CONFIG_HOME/kxkbrc
+fi

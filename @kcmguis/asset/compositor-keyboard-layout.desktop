@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Keyboard Layouts
+Comment=Keyboard Layout (kwin)
+Exec=kcmshell6 --caption "Keyboard Layout (kwin)" kcm_keyboard
+Type=Application
+Icon=keyboard
+Categories=Settings;DesktopSettings;Qt;RSp;
+OnlyShowIn=RSp;

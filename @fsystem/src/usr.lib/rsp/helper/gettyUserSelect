@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Lista os usuários disponíveis, exceto 'root' e 'nobody'
+USERS=$(awk -F: '$3 >= 1000 { print $1 }' /etc/passwd | grep -vE '^root$|^nobody$')
+
+echo "Escolha um usuário para fazer login:"
+
+# Exibe a lista de usuários com um número
+select USER in $USERS; do
+    if [ -n "$USER" ]; then
+        echo "Você escolheu $USER"
+        break
+    else
+        echo "Opção inválida, tente novamente."
+    fi
+done
+
+# A partir daqui, usamos o comando login para fazer o login do usuário selecionado
+exec login "$USER"

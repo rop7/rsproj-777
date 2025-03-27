@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Usando lsblk para listar os dispositivos e suas partições, incluindo o tipo de dispositivo
+# Agora, vamos filtrar apenas discos físicos (TYPE == 'disk') e excluir tipos como 'loop', 'fd', 'sr', 'zram', etc.
+#PRIMARY_DISK=$(lsblk -d -o NAME,TYPE | grep 'disk' | grep -vE 'loop|fd|sr|rom|zram' | awk '{print $1}' | head -n 1)
+
+# Verifica se encontramos o primeiro disco persistente
+#if [ -z "$PRIMARY_DISK" ]; then
+#    echo "Não foi possível identificar o primeiro disco persistente."
+#    exit 1
+#fi
+
+# Limpeza de qualquer caractere extra indesejado (ex: backticks ou espaços)
+#PRIMARY_DISK=$(echo "$PRIMARY_DISK" | tr -d '`-' | tr -d ' ^t^|' | tr -d ' ^t^`' | tr -d '[:space:]')
+
+# Monta o caminho completo do disco principal
+#root_disk="/dev/$PRIMARY_DISK"
+
+# Exibe o disco principal identificado
+#echo "O primeiro disco persistente identificado é: $root_disk"
+
+# Exporta a variável, se necessário
+#export root_disk
+
+source /home/rsp/.installer/sourceDiskName.sh
+
+root_disk=$disk_name
+
+export root_disk;

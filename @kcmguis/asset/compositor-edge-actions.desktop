@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Windows Edge Dispatchers
+Comment=Screen Compositor Actions (kwin)
+Exec=kcmshell6 --caption "Screen Compositor Actions (kwin)" kcm_kwinscreenedges
+Type=Application
+Icon=preferences-system-windows-effect-screenedge
+Categories=Settings;DesktopSettings;Qt;RSp;
+OnlyShowIn=RSp;

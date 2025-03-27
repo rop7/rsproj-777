@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Windows Scripts
+Comment=Window Compositor Scripts (kwin)
+Exec=kcmshell6 --caption "Window Compositor Scripts (kwin)" kcm_kwin_scripts
+Type=Application
+Icon=preferences-system-windows-effect-wobblywindows
+Categories=Settings;DesktopSettings;Qt;RSp;
+OnlyShowIn=RSp;

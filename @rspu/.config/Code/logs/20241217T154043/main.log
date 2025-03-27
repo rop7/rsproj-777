@@ -1,0 +1,22 @@
+2024-12-17 15:40:44.298 [error] Error: Unable to retrieve mac address (unexpected format)
+    at fE (file:///usr/share/code/resources/app/out/main.js:49:28217)
+    at wE (file:///usr/share/code/resources/app/out/main.js:49:28594)
+    at async file:///usr/share/code/resources/app/out/main.js:49:28511
+    at async A$ (file:///usr/share/code/resources/app/out/main.js:72:107181)
+    at async R$ (file:///usr/share/code/resources/app/out/main.js:72:107544)
+    at async Promise.all (index 0)
+    at async Eu.startup (file:///usr/share/code/resources/app/out/main.js:81:6552)
+    at async B2.a (file:///usr/share/code/resources/app/out/main.js:111:36965)
+2024-12-17 15:40:44.438 [info] update#setState idle
+2024-12-17 15:40:47.236 [error] [network] #1: https://update.code.visualstudio.com/api/update/linux-x64/stable/f1a4fb101478ce6ec82fe9627c43efbf9e98c813 - error undefined net::ERR_INTERNET_DISCONNECTED
+2024-12-17 15:40:47.236 [error] update#isLatestVersion(): failed to check for updates
+2024-12-17 15:40:47.236 [error] Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:117531)
+    at SimpleURLLoaderWrapper.emit (node:events:519:28)
+2024-12-17 15:41:14.441 [info] update#setState checking for updates
+2024-12-17 15:41:14.449 [error] [network] #2: https://update.code.visualstudio.com/api/update/linux-x64/stable/f1a4fb101478ce6ec82fe9627c43efbf9e98c813 - error undefined net::ERR_INTERNET_DISCONNECTED
+2024-12-17 15:41:14.449 [error] Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:117531)
+    at SimpleURLLoaderWrapper.emit (node:events:519:28)
+2024-12-17 15:41:14.450 [info] update#setState idle
+2024-12-17 15:41:23.027 [info] Extension host with pid 97590 exited with code: 0, signal: unknown.

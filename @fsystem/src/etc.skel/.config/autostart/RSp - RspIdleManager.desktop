@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/usr/lib/rsp/proc/idleManagerStart
+Hidden=true
+Name=RSp - IdleManager
+Type=Application
+Version=1.0

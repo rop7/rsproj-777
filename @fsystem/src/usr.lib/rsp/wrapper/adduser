@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Wrapper for adduser command
+yes | /usr/sbin/adduser "$@" --shell /bin/bash > /dev/null
+
+# Check if adduser succeeded
+if [ $? -ne 0 ]; then
+  echo "Erro: O comando adduser falhou."
+  exit 1
+fi
+
+# Extract the username (first argument to adduser)
+username="$1"
+
+# Pass the username to the Node.js script via environment variable
+USER=$username /usr/lib/rsp/helper/adduserPost
+
+passwd $username;

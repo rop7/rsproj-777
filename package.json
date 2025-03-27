@@ -1,0 +1,26 @@
+{
+  "name": "rsp",
+  "version": "7.7.7",
+  "description": "",
+  "scripts": {
+    "start": "yes | node start.js",
+    "git-sync": "git add .; git commit -m update; git push",
+    "start-qemu-hda": "./startQemu.sh --hda ~/Desktop/development/RSpHD.qcow2",
+    "start-qemu-iso": "./startQemu.sh --hda ~/Desktop/development/RSpHD.qcow2 --iso ~/Desktop/development/rsproj-media/rsp777-2025.02.24.iso",
+    "remove-development-state": "sudo rm -rf /var/.isDevelopmentDeploy",
+    "add-development-state": "sudo touch /var/.isDevelopmentDeploy",
+    "remove-production-state": "sudo rm -rf /var/.isProductionDeploy",
+    "add-production-state": "sudo touch /var/.isProductionDeploy",
+    "deploy-development": "npm run add-development-state && npm run remove-production-state && sudo /home/rsp/Space/development/rsproj/@scripts/deploy/index.sh",
+    "deploy-production": "npm run add-production-state && npm run remove-development-state && sudo /home/rsp/Space/development/rsproj/@scripts/deploy/index.sh",
+    "bootstrap": "cd @scripts/bootstrap && bash index.sh",
+    "setups": "cd @scripts/setup && bash index.sh",
+    "setup-fsystem": "cd @fsystem && ./start.js",
+    "setup-kcmguis": "cd @kcmguis && make",
+    "setup-installer": "cd @installer/17g && bash ./deps.sh && bash ./install",
+    "setup-remasters": "cd @remasters && ./start.js",
+    "init": "npm run bootstrap && npm run setups && npm run setup-fsystem && npm run setup-installer && npm run setup-kcmguis && npm run setup-remasters"    
+  },
+  "author": "@ropsoft",
+  "license": "Apache-2.0"
+}

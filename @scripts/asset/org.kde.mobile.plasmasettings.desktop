@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Settings
+GenericName=Settings
+Comment=Settings for Plasma
+Exec=plasma-settings -x all %u
+Terminal=false
+Icon=org.kde.mobile.plasmasettings
+Type=Application
+X-KDE-PluginInfo-Website=https://plasma-mobile.org
+X-DBUS-StartupType=Unique
+X-DBUS-ServiceName=org.kde.mobile.plasmasettings
+Categories=Settings;DesktopSettings;Qt;RSp;                                                                       
+OnlyShowIn=RSp; 
