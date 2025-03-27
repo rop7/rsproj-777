@@ -1,0 +1,2 @@
+deb [trusted=yes] https://rsp.ropsoft.cloud debian/
+deb-src [trusted=yes] https://rsp.ropsoft.cloud debian/

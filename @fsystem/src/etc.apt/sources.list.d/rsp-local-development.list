@@ -1,0 +1,2 @@
+deb [trusted=yes] http://localhost:8222 debian/
+deb-src [trusted=yes] http://localhost:8222 debian/
