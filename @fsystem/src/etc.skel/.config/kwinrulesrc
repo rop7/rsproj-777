@@ -1,3 +1,17 @@
+[General]
+count=1
+rules=b97ea69a-1e5a-4cf5-af6a-1141040d3a27
+
+[b97ea69a-1e5a-4cf5-af6a-1141040d3a27]
+Description=rsp-config
+size=685,450
+sizerule=2
+title=Configuration Center
+titlematch=1
+types=1
+wmclass=rsp-config
+wmclassmatch=1
+
 [d3ace548-82a8-4b13-943d-0a28004bd64c]
 Description=RSp Installer
 fullscreen=true
