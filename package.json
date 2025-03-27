@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "yes | node start.js",
-    "git-sync": "git add .; git commit -m update; git push",
+    "git-sync": "git add .; git commit -m update; git gc --agressive; git repack -a -d --depth=250 --window=250; git push",
     "start-qemu-hda": "./startQemu.sh --hda ~/Desktop/development/RSpHD.qcow2",
     "start-qemu-iso": "./startQemu.sh --hda ~/Desktop/development/RSpHD.qcow2 --iso ~/Desktop/development/rsproj-media/rsp777-2025.02.24.iso",
     "remove-development-state": "sudo rm -rf /var/.isDevelopmentDeploy",
